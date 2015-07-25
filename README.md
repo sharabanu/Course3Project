@@ -20,23 +20,24 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##For this assignment I have create one R script called run_analysis.R which performed the following tasked: 
 
-##1)  Merges the training and the test sets to create one data set.
-     ```
-     subject <- rbind(subjectTrain, subjectTest)
-     activity <- rbind(activityTrain, activityTest)
-     features <- rbind(featuresTrain, featuresTest)
-     ```
-     Name the column names from the features file in variable featureNames
-     ```
-     colnames(features) <- t(featureNames[2])
-     ```
+##1)  Merges the training and the test sets to create one data set
+```
+subject <- rbind(subjectTrain, subjectTest)
+activity <- rbind(activityTrain, activityTest)
+features <- rbind(featuresTrain, featuresTest)
+```
+
+Name the column names from the features file in variable featureNames
+```
+colnames(features) <- t(featureNames[2])
+```
      
-     Add activity and subject as a column to features
-     ```
-     colnames(activity) <- "Activity"
-     colnames(subject) <- "Subject"
-     completeData <- cbind(features,activity,subject)
-     ```
+Add activity and subject as a column to features
+```
+colnames(activity) <- "Activity"
+colnames(subject) <- "Subject"
+completeData <- cbind(features,activity,subject)
+```
      
 ##2)Extracts only the measurements on the mean and standard deviation for each measurement. 
     
