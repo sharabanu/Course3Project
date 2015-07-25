@@ -56,15 +56,15 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##4)Appropriately labels the data set with descriptive variable names. 
 
--Look at variable names
+--Look at variable names
 names(extractedData)
 
--Acc can be replaced with Accelerometer
--Gyro can be replaced with Gyroscope
--BodyBody can be replaced with Body
--Mag can be replaced with Magnitude
--Character 'f' can be replaced with Frequency
--Character 't' can be replaced with Time
+--Acc can be replaced with Accelerometer
+--Gyro can be replaced with Gyroscope
+--BodyBody can be replaced with Body
+--Mag can be replaced with Magnitude
+--Character 'f' can be replaced with Frequency
+--Character 't' can be replaced with Time
 
 names(extractedData)<-gsub("Acc", "Accelerometer", names(extractedData))
 names(extractedData)<-gsub("Gyro", "Gyroscope", names(extractedData))
