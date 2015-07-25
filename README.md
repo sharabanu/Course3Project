@@ -39,21 +39,22 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
      ```
      
 ##2)Extracts only the measurements on the mean and standard deviation for each measurement. 
+    
     Adding activity and subject columns
     
-    ```
-    requiredColumns <- c(columnsWithMeanSTD, 562, 563)
-    ```
+     ```
+       requiredColumns <- c(columnsWithMeanSTD, 562, 563)
+      ```
     Look at the number of variables in completeData
-    ```
-    dim(completeData)
-    extractedData <- completeData[,requiredColumns]
-    ```
+      ```
+      dim(completeData)
+      extractedData <- completeData[,requiredColumns]
+      ```
     
     Look at the number of variables in extractedData
-    ```
-    dim(extractedData)
-    ```
+      ```
+      dim(extractedData)
+      ```
     
 ##3)Uses descriptive activity names to name the activities in the data set
     ```
