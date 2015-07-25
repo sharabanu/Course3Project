@@ -64,7 +64,6 @@ names(extractedData)
 -Mag can be replaced with Magnitude
 -Character 'f' can be replaced with Frequency
 -Character 't' can be replaced with Time
-
 names(extractedData)<-gsub("Acc", "Accelerometer", names(extractedData))   
 names(extractedData)<-gsub("Gyro", "Gyroscope", names(extractedData))  
 names(extractedData)<-gsub("BodyBody", "Body", names(extractedData))  
@@ -84,12 +83,15 @@ extractedData$Subject <- as.factor(extractedData$Subject)
 extractedData <- data.table(extractedData)
 
 -Create tidyData as a set with average for each activity and subject
+
 TidyData <- aggregate(. ~Subject + Activity, extractedData, mean)
 
 -Order tidayData according to subject and activity
+
 TidyData <- TidyData[order(TidyData$Subject,TidyData$Activity),]
 
 -Write tidyData into a text file named TidyData.txt
+
 write.table(TidyData, file = "TidyData.txt", row.names = FALSE)
 
 End 
