@@ -18,7 +18,7 @@ A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-#For this assignment I have create one R script called run_analysis.R which performed the following tasked: 
+##For this assignment I have create one R script called run_analysis.R which performed the following tasked: 
 
 ##1)  Merges the training and the test sets to create one data set.
       subject <- rbind(subjectTrain, subjectTest)
