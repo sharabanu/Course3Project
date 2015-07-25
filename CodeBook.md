@@ -1,7 +1,7 @@
 ## Code book for Assignment Module 3
-#Getting and Cleaning Data Course Project - CodeBook
+##Getting and Cleaning Data Course Project - CodeBook
 
-#Description
+##Description
 
 Additional information about the variables, data and transformations used in the course project for the Getting and Cleaning Data course.
 
